@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="header">
+        <h1 id="title">Work Environment survey</h1>
+        <p id="description">
+          Thank you for taking out time to improve our work environment
+        </p>
+      </header>
+      <form id="survey-form" action="">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            class="form-control"
+            required
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email id"
+            class="form-control"
+            required
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input
+            type="number"
+            placeholder="Age"
+            id="number"
+            class="form-control"
+            name="number"
+            min="19"
+            max="70"
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="department">Which department do you work in?</label>
+          <select id="dropdown" class="form-control" name="department">
+            <option disabled="" selected="" value="">
+              Select your department
+            </option>
+            <option class="form-control" value="engg">Engineering</option>
+            <option class="form-control" value="it">
+              Information Technology
+            </option>
+            <option class="form-control" value="hr">Human Resource</option>
+            <option class="form-control" value="hk">House Keeping</option>
+            <option class="form-control" value="logi">Logistics</option>
+            <option class="form-control" value="sec">Security</option>
+          </select>
+        </div>
+        <br />
+        <div class="form-group">
+          <p>Would you recommend this company to a friend?</p>
+          <label>
+            <input
+              type="radio"
+              class="input-radio"
+              name="reco"
+              value="definately"
+            />
+            Definately
+          </label>
+          <label>
+            <input type="radio" class="input-radio" name="reco" value="maybe" />
+            May be
+          </label>
+          <label>
+            <input type="radio" class="input-radio" name="reco" value="noway" />
+            No way
+          </label>
+        </div>
+        <br />
+        <div class="form-group">
+          <p>
+            What would you like to improve at your workplace?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="improve"
+              value="diversity"
+            />
+            Diversity and inclusiveness
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="improve"
+              value="balance"
+            />
+            Work Life Balance
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="improve"
+              value="jobsecurity"
+            />
+            Job security
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="improve"
+              value="csr"
+            />
+            Corporate Social Responsibility
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="improve"
+              value="safe"
+            />
+            Safety
+          </label>
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="message"> Any comments or suggestions?</label><br />
+          <textarea class="input-textarea" name="message"></textarea>
+        </div>
+        <br />
+        <input id="submit" class="submit-button" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
